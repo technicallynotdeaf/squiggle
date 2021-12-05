@@ -5,36 +5,22 @@ Squiggle is a "hello world" module, that gives just the bare bones structure for
 
 
 ## To install: 
-1. zip up the "component" folder (e.g. into a file called com_edamame.zip)
+1. zip up the "component" folder (e.g. into a file called com_0.3.zip)
 2. On a Joomla server, log in as Administrator and go to "Extensions" (top menus) and then "manage" 
 3. Drag and drop the zip file into the box that says "upload & install" 
 
 ## To use: 
 
-...
+You will now have a menu option called "Squiggle" and a view called "elephant" in your admin backend. 
+You will be able to add a view called "gorilla" to your front-end. 
 
+To make it your own, do a case sensitive find + replace for Squiggle and squiggle, then replace with your own module name... 
+I suggest reading over the files and doing manual find+replace. 
 
-This project is still extremely quick'n'dirty, I needed to get it up and running fairly quickly to give me a way to manage lots of bits of info.
+The actual code that appears on the admin view is in component > admin > views > *elephant* > tmpl > default.php
 
+To create views: copy the entire *elephant* folder, rename the folder and do a find/replace on the php files that mention the old view name. 
 
-# Other info that's not related to THIS component specifically... 
+--
 
-## Generally Helpful readmes on coding Joomla Components
-How to create a view: https://www.inmotionhosting.com/support/edu/joomla-3/create-component/add-new-view
-
-How to add a menu item: https://www.inmotionhosting.com/support/edu/joomla-3/create-component/menu-item
-
-Adding a new task: https://www.inmotionhosting.com/support/edu/joomla-3/create-component/add-new-task
-
-Changing 'task' for custom component:  https://forum.joomla.org/viewtopic.php?t=341566
-
-Setting the page title from inside the component: https://joomla.stackexchange.com/questions/4317/how-can-i-set-the-page-title-from-a-component
-
-Adding OG: and Twitter header metadata: https://www.collectiveray.com/joomla/joomla-tutorials/add-facebook-open-graph-and-twitter-cards-to-joomla.html
-
-## Useful later for creating an API:
-How to add a new output format to your Joomla Component: 
-https://www.inmotionhosting.com/support/edu/joomla-3/create-component/formats
-
-loading files with helper functions: (#include)
-https://joomla.stackexchange.com/questions/15172/best-way-to-include-helper-class-in-sub-controller-require-once-or-jloader
+This project is still extremely quick'n'dirty, It is just a starting point for creating other components easily.
