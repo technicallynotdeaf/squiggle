@@ -44,7 +44,9 @@ $db = SquiggleHelper::getDB();
 
 <?php 
 
-$squiggle_data = SquiggleHelper::getData($db); 
+// This isn't working yet because the table creation screwed up on me for some reason.
+// Probably a syntax error in the SQL file... oops 
+// $squiggle_data = SquiggleHelper::getData($db); 
 
 ?>
 

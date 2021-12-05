@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS `#__com_tawny_parties`;
+DROP TABLE IF EXISTS `##_com_squiggle_data`;
 
-CREATE TABLE `#__com_squiggle_data` (
+CREATE TABLE `##_com_squiggle_data` (
 	`id`  INT(11)     NOT NULL AUTO_INCREMENT,
 	`name` VARCHAR(50) UNIQUE NOT NULL,
 	`acronym` VARCHAR(25) UNIQUE NOT NULL,
